@@ -45,7 +45,7 @@ const config = {
   plugins: [],
   defineConstants: {
     // FIXME: 全局变量
-    UMI_ENV: JSON.stringify(env[process.env.UMI_ENV || 'env']) // JSON.stringify('a')
+    UMI_ENV: JSON.stringify(env[process.env.UMI_ENV || 'dev']) // JSON.stringify('a')
   },
   copy: {
     patterns: [
