@@ -1,11 +1,12 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
+import Taro from '@tarojs/taro';
+import { View, Button, Text, CoverView, CoverImage } from '@tarojs/components';
 import { observer, inject } from 'mobx-react';
-import { View, Button, Text } from '@tarojs/components';
 
 // Header
 import Header from '@/components/Header/index';
 
-// import styles from "./index.module.less";
+import styles from './index.module.scss';
 
 type PageStateProps = {
   store: {
@@ -40,23 +41,38 @@ class Index extends Component {
     counterStore.incrementAsync();
   };
 
+  goback = () => {
+    // Taro.navigateBack();
+    Taro.navigateTo({
+      url: '/pages/bar2/index',
+    });
+  };
+
   render() {
+    console.log('->: 🚀 ', UMI_ENV?.name);
+
     const {
       counterStore: { counter },
     } = this.props.store;
-
-    console.log('🚀 ', UMI_ENV?.name);
 
     return (
       <>
         <Header />
 
+        <View>Hello World!</View>
+
         <View className='index'>
-          <Button onClick={this.increment}>+</Button>
-          <Button onClick={this.decrement}>-</Button>
+          <Button className={styles.btn} onClick={this.increment}>
+            +1
+          </Button>
+          <Button className={styles.btn} onClick={this.decrement}>
+            -1
+          </Button>
           <Button onClick={this.incrementAsync}>Add Async</Button>
           <Text>{counter}</Text>
         </View>
+
+        <Button onClick={this.goback}>button</Button>
       </>
     );
   }
