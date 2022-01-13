@@ -49,6 +49,10 @@ const config = {
   },
   copy: {
     patterns: [
+      {
+        from: 'src/assets',
+        to: 'dist/assets',
+      }
     ],
     options: {
     }
@@ -56,8 +60,12 @@ const config = {
   framework: 'react',
   // ...
   alias: {
-    // FIXME: 别名
-    '@': path.resolve(__dirname, '..', '/src/'),
+    // FIXME: 别名（不能以@开头，优先级最高）
+    '@/': path.resolve(__dirname, '..', 'src/'),
+    '@/components': path.resolve(__dirname, '..', 'src/components'),
+    '@/services': path.resolve(__dirname, '..', 'src/services'),
+    '@/utils': path.resolve(__dirname, '..', 'src/utils'),
+
   },
   mini: {
     postcss: {
@@ -86,6 +94,19 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    // FIXME: 添加
+    output: {
+      filename: 'js/[name].[hash:8].js',
+      chunkFilename: 'js/[name].[chunkhash:8].js'
+    },
+    miniCssExtractPluginOption: {
+      filename: 'css/[name].[hash:8].css',
+      chunkFilename: 'css/[id].[chunkhash:8].css'
+    },
+    // FIXME: 或者是 'browser'
+    router: {
+      mode: 'browser'
+    },
     postcss: {
       autoprefixer: {
         enable: true,

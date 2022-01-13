@@ -44,23 +44,22 @@ button {
   .bg {
     position: relative;
     width: 710px;
-    height: 72px;
-    background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
+    height: 70px;
     border-radius: 40px;
-    padding: 3px;
+    padding: 4px;
+    background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
     box-sizing: border-box;
 
     .input {
-      position: absolute;
-      top: 3px;
-      width: 698px;
-      height: 66px;
-      background: #ffffff;
-      mix-blend-mode: normal;
-      margin: 0;
-      padding: 0;
+      flex: 1 1 auto;
+      height: 100%;
       border: 0;
+      margin: 0;
+      padding: 10px 30px;
       border-radius: 40px;
+      font-size: 26px;
+      background: #ffffff;
+      box-sizing: border-box;
     }
 
     .button {
@@ -68,8 +67,8 @@ button {
       top: 0;
       right: 0;
       width: 140px;
-      height: 72px;
-      line-height: 72px;
+      height: 70px;
+      line-height: 70px;
       background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
       border: 0;
       border-radius: 36px;

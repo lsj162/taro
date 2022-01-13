@@ -1,23 +1,46 @@
-# 初始化
+# `初始化`
 
 npx @tarojs/cli init myApp
 
-# 配置
-<!-- 没卵用 -->
-<!-- yarn add @tarojs/plugin-html  -->
+# `目录结构`
+
+    1. 路由
+
+        - src
+            - + components
+            - + services
+            - + store
+            - + utils
+            - pages
+            - app.scss
+            - app.tsx
+
+# `添加配置`
+
+yarn
 
 yarn add cross-env --dev
 
-yarn add mobx mobx-react // 重新安装最新版本
+yarn add sass mobx mobx-react echarts lodash-es js-cookie normalize.css
 
-.prettierrc
+# `环境变量`
 
-jsxSingleQuote // 配置单引号
+# `支持`
 
-# 启动
+1. 支持小程序分包处理
 
-yarn dev:h5
+2. 支持小程序 echarts 渲染
 
+3. 支持图标 Iconfont
 
-# 兼容性尝试
-不支持h5自定义tabBar
+4. 返回顶部滚动
+
+5. 下拉滑动加载
+
+6. 滚动定位
+
+7. 标签单选，多选，全选
+
+<!-- 没卵用 -->
+<!-- yarn add @tarojs/plugin-html  -->
+<!-- 不支持 h5 自定义 tabBar -->
