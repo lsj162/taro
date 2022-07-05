@@ -11,24 +11,28 @@ const env = {
     // api代理
     api_host: '',
   },
+
   // 预发
   pre: {
     name: 'pre',
     // api代理
     api_host: '',
   },
+
   // 测试
   test: {
     name: 'test',
     // api代理
     api_host: '',
   },
+
   // 开发
   dev: {
     name: 'dev',
     // api代理
     api_host: '',
   },
+
 };
 
 const config = {

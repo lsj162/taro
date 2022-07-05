@@ -26,6 +26,14 @@ function Page() {
     <>
       <Button
         onClick={() => {
+          onClick('/pages/show/pages/demoPage/un-Table/index');
+        }}
+      >
+        表格渲染
+      </Button>
+
+      <Button
+        onClick={() => {
           onClick('/pages/show/pages/demoPage/Affix/index');
         }}
       >

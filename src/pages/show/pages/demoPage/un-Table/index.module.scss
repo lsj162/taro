@@ -1,0 +1,76 @@
+.tableBox {
+  width: 100%;
+  overflow: scroll;
+
+  .table {
+    width: 1850px;
+    min-width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-collapse: collapse;
+
+    .thead {
+      width: 100%;
+      height: 88px;
+      line-height: 88px;
+      font-size: 28px;
+
+      .tr {
+        background: #ededed;
+        color: #666666;
+        height: 88px;
+        line-height: 88px;
+        float: left;
+      }
+
+      .th {
+        display: inline-block;
+        background: #ededed !important;
+        color: #666666 !important;
+        font-weight: 500;
+        width: 200px;
+        height: 88px;
+        line-height: 88px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+    }
+
+    .tbody {
+      width: 100%;
+      background: #f7f7f7;
+      font-size: 28px;
+
+      .tr {
+        height: 100px;
+        float: left;
+      }
+
+      .td {
+        display: inline-block;
+        height: 100px;
+        color: #666666;
+        width: 200px;
+        height: 88px;
+        line-height: 88px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+    }
+  }
+
+  .sticky {
+    position: sticky;
+    left: 0px;
+  }
+
+  .fixedTd {
+    width: 200px !important;
+    color: #999;
+    background: #f7f7f7;
+    text-align: left;
+    padding-left: 40px;
+  }
+}

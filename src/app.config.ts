@@ -32,6 +32,7 @@ export default {
         'pages/demoPage/Radio/index',
         'pages/demoPage/Select/index',
         'pages/demoPage/Tabs/index',
+        'pages/demoPage/un-Table/index',
       ],
     },
   ],
