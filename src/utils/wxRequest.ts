@@ -1,5 +1,4 @@
 import Taro from '@tarojs/taro';
-import Cookies from 'js-cookie';
 
 const { api_host } = UMI_ENV;
 

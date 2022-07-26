@@ -1,8 +1,8 @@
-import { Component } from 'react';
 import { Provider } from 'mobx-react';
+import { Component } from 'react';
 
-import counterStore from './store/counter';
-import { testStore } from './store/testStore';
+import counterStore from './models/counter';
+import { testStore } from './models/testStore';
 
 import './app.scss';
 
