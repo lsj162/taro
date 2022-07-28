@@ -2,8 +2,8 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 40px;
-    padding-bottom: 400px;
+    padding: 20px;
+    padding-bottom: 200px;
 }
 
 .card {
@@ -13,7 +13,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    padding: 30px 0;
+    padding: 15px 0;
 
     &:first-child {
         &:after {
@@ -47,8 +47,8 @@
         display: flex;
         align-items: center;
         justify-content: start;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         flex-basis: 1;
     }
 
@@ -61,25 +61,25 @@
             display: flex;
             align-items: center;
             width: 100%;
-            font-size: 34px;
-            margin-bottom: 8px;
+            font-size: 17px;
+            margin-bottom: 4px;
 
             .label {
                 display: flex;
                 align-items: center;
                 height: auto;
                 background-color: rgba(152, 152, 152, 0.1);
-                font-size: 22px;
-                border-radius: 4px;
-                padding: 1px 8px;
-                margin: 0 10px;
+                font-size: 11px;
+                border-radius: 2px;
+                padding: 1px 4px;
+                margin: 0 5px;
                 color: rgba(0, 0, 0, 0.5);
             }
         }
         .intro {
             width: 100%;
             color: rgba(0, 0, 0, 0.5);
-            font-size: 28px;
+            font-size: 14px;
         }
     }
 
@@ -87,8 +87,8 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         flex-basis: 1;
     }
 }

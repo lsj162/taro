@@ -74,10 +74,8 @@ const config = {
   mini: {
     postcss: {
       pxtransform: {
-        enable: true,
-        config: {
-
-        }
+        // 禁止px转rpx
+        enable: false,
       },
       url: {
         enable: true,
@@ -113,9 +111,8 @@ const config = {
     },
     postcss: {
       autoprefixer: {
-        enable: true,
-        config: {
-        }
+        // 禁止px转rpx
+        enable: false,
       },
       cssModules: {
         // FIXME: 开启

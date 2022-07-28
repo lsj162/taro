@@ -1,80 +1,80 @@
 div,
 input,
 button {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 140px;
-  padding: 20px;
-  transition: all 0.5s;
-  box-sizing: border-box;
-
-  .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    transition: all 0.5s;
+    box-sizing: border-box;
 
-    .img {
-      width: 65px;
-      height: 60px;
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .img {
+            width: 30px;
+            height: 30px;
+        }
     }
-  }
 
-  .login {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+    .login {
+        display: flex;
+        justify-content: center;
+        text-align: center;
 
-    .a {
-      color: #000;
+        .a {
+            color: #000;
+        }
     }
-  }
 }
 
 .search {
-  width: 710px;
-  height: 72px;
-  margin: 0 auto;
+    width: 355px;
+    height: 36px;
+    margin: 0 auto;
 
-  .bg {
-    position: relative;
-    width: 710px;
-    height: 70px;
-    border-radius: 40px;
-    padding: 3.4px;
-    background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
-    box-sizing: border-box;
+    .bg {
+        position: relative;
+        width: 355px;
+        height: 35px;
+        border-radius: 20px;
+        padding: 1.7px;
+        background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
+        box-sizing: border-box;
 
-    .input {
-      flex: 1 1 auto;
-      height: 100%;
-      border: 0;
-      margin: 0;
-      padding: 10px 30px;
-      border-radius: 40px;
-      font-size: 26px;
-      background: #ffffff;
-      box-sizing: border-box;
+        .input {
+            flex: 1 1 auto;
+            height: 100%;
+            border: 0;
+            margin: 0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            background: #ffffff;
+            box-sizing: border-box;
+        }
+
+        .button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70px;
+            height: 35px;
+            line-height: 35px;
+            background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
+            border: 0;
+            border-radius: 18px;
+            font-weight: 500;
+            font-size: 14px;
+            color: #ffffff;
+        }
     }
-
-    .button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 140px;
-      height: 70px;
-      line-height: 70px;
-      background: linear-gradient(93.57deg, #ff8933 0%, #f9382c 100.31%);
-      border: 0;
-      border-radius: 36px;
-      font-weight: 500;
-      font-size: 28px;
-      color: #ffffff;
-    }
-  }
 }
